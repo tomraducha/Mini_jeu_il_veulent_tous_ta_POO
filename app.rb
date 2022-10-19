@@ -9,7 +9,13 @@ player1 = Player.new('Josiane', 10)
 player2 = Player.new('José', 10)
 
 while player1.life_points > 0 && player2.life_points > 0
-  puts('=========================================')
+  puts('                  ====')
+  puts('                ========')
+  puts('              ============')
+  puts('                ========')
+  puts('                  ====')
+  puts
+  puts
   puts("Voici l'état de chaque joueur:")
   puts(player1.show_state)
   puts(player2.show_state)

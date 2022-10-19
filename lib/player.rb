@@ -21,8 +21,8 @@ class Player
 
   # Lance une attaque
   def attacks(player)
-    player.get_damage(compute_damage)
     dmg = compute_damage
+    player.get_damage(dmg)
     puts("Le joueur #{name} attaque le joueur #{player.name}")
     puts("il lui inflige #{dmg} points de dommages")
   end
