@@ -32,3 +32,14 @@ class Player
     return rand(0..6)
   end
 end
+
+class HumanPlayer < Player
+  attr_accessor :weapon_level
+
+  # appel au constructeur de la classe Player
+  def initialize(name)
+    super(name)
+    @life_points = 50
+    @weapon_level = 1
+  end
+end
